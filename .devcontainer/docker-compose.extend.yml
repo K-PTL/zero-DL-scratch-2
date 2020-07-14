@@ -1,0 +1,10 @@
+version: "3"
+services:
+  zero_scratch_2:
+    environment:
+      - HOME=/zerosc2
+    working_dir: /zerosc2
+    volumes:
+      - ~/.gitconfig:/zerosc2/.gitconfig
+      - ~/.ssh:/zerosc2/.ssh
+    command: jupyter lab --NotebookApp.token='' --notebook-dir=/zerosc2/ --ip=0.0.0.0 --port=8899 --no-browser --allow-root

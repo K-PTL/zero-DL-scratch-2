@@ -1,0 +1,15 @@
+version: '3'
+services:
+  zero_scratch_2:
+    container_name: zero_scratch_2
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile
+    image: zerosc2:sutra
+    volumes:
+      - '../:/zerosc2'
+    ports:
+      - "8899:8899"
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    tty: true

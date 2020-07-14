@@ -1,0 +1,16 @@
+{
+    "name": "ZeroScratch2",
+    "dockerComposeFile": [
+      "../docker/docker-compose.yml",
+      "docker-compose.extend.yml"
+    ],
+    "service": "zero_scratch_2",
+    "workspaceFolder": "/zerosc2/",
+    "settings": {
+      "editor.tabSize": 4,
+      "files.insertFinalNewline": true,
+      "files.trimFinalNewlines": true,
+      "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "shutdownAction": "stopCompose"
+  }
